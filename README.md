@@ -1,6 +1,14 @@
 # Adafruit nRF52 Bootloader
 
-[![Build Status](https://github.com/adafruit/Adafruit_nRF52_Bootloader/workflows/Build/badge.svg)](https://github.com/adafruit/Adafruit_nRF52_Bootloader/actions)
+## Building and flashing the CoffeeCaller bootloader
+
+```
+make -j12 BOARD=tiac_coffeecaller all
+nrfjprog -f nrf52 -c 24000 --sectoranduicrerase --program _build/build-tiac_coffeecaller/tiac_coffeecaller_bootloader-0.9.2-${GIT_HASH}_s140_7.3.0.hex --reset
+
+```
+
+## General information
 
 A CDC/DFU/UF2 bootloader for Nordic nRF52 microcontroller. UF2 is an easy-to-use bootloader that appears as a flash drive. You can just copy `.uf2`-format application images to the flash drive to load new firmware. See https://github.com/Microsoft/uf2 for more information.
 
