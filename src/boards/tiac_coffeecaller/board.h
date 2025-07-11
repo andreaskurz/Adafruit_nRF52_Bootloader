@@ -20,7 +20,7 @@
 /* BUTTON
  *------------------------------------------------------------------*/
 #define BUTTONS_NUMBER 2
-#define BUTTON_1 _PINNUM(0, 12)
+#define BUTTON_1 _PINNUM(0, 4)
 #define BUTTON_2 _PINNUM(1, 15)
 #define BUTTON_PULL NRF_GPIO_PIN_PULLUP
 
@@ -43,5 +43,4 @@
 #define UF2_PRODUCT_NAME "TiaC CoffeeCaller"
 #define UF2_BOARD_ID "tiac_coffeecaller"
 #define UF2_VOLUME_LABEL "TiaCCoffee"
-#define UF2_INDEX_URL                                                          \
-  "https://www.nordicsemi.com/Software-and-Tools/Development-Kits/nRF52840-DK"
+#define UF2_INDEX_URL "https://github.com/tiacsys/ecad-coffeecaller"
